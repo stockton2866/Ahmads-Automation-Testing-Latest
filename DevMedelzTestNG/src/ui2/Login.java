@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-// The Comment is for commit
+
 public class Login {
 
 	WebDriver driver;
