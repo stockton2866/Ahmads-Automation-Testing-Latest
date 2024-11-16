@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DevMedelzSuite">
+<parameter name="browserName" value="Chrome"/>
+
+<parameter name="sleepTime" value="3000"/>
+
+  <test  name="Login" enabled="false">
+<!--	  <parameter name="url" value="https://medelz:Medelz@dev@1976@dev.medelz.com/login/"/>-->
+	  <classes>
+		  <class name="Package1.FirstTest">
+			  <methods>
+				  <include name="LaunchApp"/>
+				  <include name="LoginDev"/>
+				  <include name="VerifyLoginTestcase"/>
+			  </methods>
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+    <test  name="Registration" enabled="true">
+	  <classes>
+		  <class name="Package1.RegistrationDev">
+			  <methods>
+				  <include name="LaunchApp"/>
+				  <include name="RegistrationOfDev"/>
+				  <include name="VerifyRegistrationTestcase"/>
+			  </methods>
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
