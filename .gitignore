@@ -1,18 +1,12 @@
 # Ignore Eclipse IDE-specific files
 .metadata/
-
-# Ignore log files
-*.log
-
-# Ignore snap files (Eclipse-related)
-*.snap
-
-# Ignore index files (Eclipse-related)
-*.index
-
-# Ignore temporary or workspace-specific files
+.mylyn/
+.tasks.xml.zip
+.snap
+.log
 *.swp
-
-# Ignore .classpath and .project files used by Eclipse
-.classpath
-.project
+*.bak
+*.class
+*.project
+*.classpath
+*.settings/
